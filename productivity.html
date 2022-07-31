@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+    body{
+        width:300px;
+        margin: 0;
+        border: 3px solid grey;
+        padding: 10px;
+        font-size:medium;
+        background: rgb(238, 238, 238);
+    }
+    .todo-items,
+    .todo-items li{
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 10px;
+        list-style: none;
+    }
+
+    .todo-items{
+        padding-top: 10px;
+    }
+
+    .todo-items div span{
+        margin:5px;
+        font-size:1em;
+        cursor: pointer;
+    }
+    .title{
+        color:rgb(65, 60, 54);
+        font-size:larger;
+        font-weight: 500;
+        padding-top:5px;
+        padding-bottom: 10px;
+    }
+    .lo-fi, .work{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 12px;
+        margin-right:12px;
+        padding-bottom: 5px;
+    }
+    .lofi{
+        color: rgb(47, 173, 125);
+        font-weight: 500;
+        font-size:large;
+    }
+    .play, .stop{
+        font-weight: bold;
+    }
+    .play:hover, .stop:hover, .add{
+        background-color: rgb(240, 68, 68);
+        color:white;
+        font-weight: bold;
+        border: 2px solid rgb(240, 68, 68);
+        border-radius: 5px;
+        
+    }
+    .select{
+        width: 100px; 
+    }
+    .lo-fi{
+        padding-bottom:10px
+    }
+    input{
+        width:55%
+    }
+    div span button{
+        background: rgb(180, 150, 150);
+        background: rgb(146, 134, 134);
+        width : 100%;
+        border: 0px;
+        padding: 8px 8px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 2px;
+        margin-left:0;
+        font-weight: 500;
+    }
+
+    div span button:hover{
+        background: rgb(10, 5, 8);
+        color: rgb(64, 21, 180);
+    }
+    .developer{
+        display:flex;
+        justify-content: space-around;
+        font-size: x-small;
+        color:rgb(207, 200, 189)
+    }
+    </style>
+  </head>
+  <body>
+    <div class="title"><center> Lo-fi <span style="color:red">'n'</span> Work </center></div>
+    <div class="lo-fi">
+        <span class="lofi"> Lo-fi </span> 
+    <select class="select">
+        <option value="Soft Light">Soft Light</option>
+        <option value="That's Cool">That's Cool</option>
+        <option value="Wind Over">Wind Over</option>
+        <option value="After Rain" selected>After Rain</option>
+      </select>
+      <audio class="audio-element" src="Wind Over.mp3"></audio>
+      <button class="play"><small>PLAY</small></button>
+      <button class="stop"><small>STOP</small></button>
+    </div>
+    <div class="work">
+       <span class="lofi"> Work </span>
+       <input type="text"/>
+       <button class="add">Add</button>
+    </div>
+       
+    <ul class="todo-items">
+    </ul>
+
+    <div class="developer"><em>Developer : Harini</em></div>
+
+    <script src="productivity.js"></script>
+  </body>
+</html>

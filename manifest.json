@@ -1,0 +1,10 @@
+{
+    "name": "Lofi-n-Work",
+    "version": "0.01",
+    "description": "Productivity App",
+    "browser_action": {
+            "default_title": "Lofi-n-Work",
+            "default_popup": "productivity.html"
+    },
+    "manifest_version": 2
+}
